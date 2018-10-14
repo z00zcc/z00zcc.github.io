@@ -1070,6 +1070,15 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-mo
 .post-list-item-container .item-label.bg-blue .item-title a, .post-list-item-container .item-label.bg-purple .item-title a, .post-list-item-container .item-label.bg-green .item-title a, .post-list-item-container .item-label.bg-yellow .item-title a, .post-list-item-container .item-label.bg-red .item-title a, .post-list-item-container .item-label.bg-orange .item-title a, .post-list-item-container .item-label.bg-blue .item-meta .item-meta-date, .post-list-item-container .item-label.bg-purple .item-meta .item-meta-date, .post-list-item-container .item-label.bg-green .item-meta .item-meta-date, .post-list-item-container .item-label.bg-yellow .item-meta .item-meta-date, .post-list-item-container .item-label.bg-red .item-meta .item-meta-date, .post-list-item-container .item-label.bg-orange .item-meta .item-meta-date {
   color: #fff; }
 
+.post-footer .post-footer-nav {
+  border-top: 1px solid #e0e0e0;
+  padding: 20px 0 30px;
+  max-width: 700px;
+  margin: 0 auto; }
+
+.post-footer .post-footer-link {
+  width: 50%; }
+
 .search-page .search-box {
   line-height: 40px;
   position: relative;

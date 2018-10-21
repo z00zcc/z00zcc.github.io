@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="/favicon.ico">
   
   
-  <title>2018年中秋 | z00z Blog</title>
+  <title>spring boot oauth2 登录验证 | z00z Blog</title>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   <!--[if lt IE 9]>
@@ -65,15 +65,15 @@
     <article class="main-content page-page">
       <div class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          2018年中秋
+          spring boot oauth2 登录验证
         </h1>
         <div class="post-data">
-          <time datetime=" 2018-09-24 " itemprop="datePublished">
+          <time datetime=" 2018-10-21 " itemprop="datePublished">
             Published on
-            2018-09-24
+            2018-10-21
             / 分类: 
             
-              <a href="/categories/时间/">时间</a>
+              <a href="/categories/技术/">技术</a>
             
           </time>
         </div>
@@ -81,24 +81,40 @@
       <div id="post-content" class="post-content">
         <p class="post-tags">
             
-              <a href="/tags/碎念/">碎念</a>
+              <a href="/tags/spring-boot/">spring boot</a>
+            
+              <a href="/tags/oauth2/">oauth2</a>
             
         </p>
-        <p>一个人，第一次觉得 原味薯片 好难吃，又咸又硬。<br><a id="more"></a></p>
-<p><img src="https://i.loli.net/2018/09/24/5ba901da26b53.jpg" alt="moon"></p>
-<p>月亮很圆，不过看几眼就腻了。</p>
-<p>希望自己能变成内心丰富的人吧，和今天的月亮一样亮和圆，不过我真的很懒很废，对未来也不太清楚，但还是要多努力，多赚钱啊。</p>
-<p>——2018年 中秋</p>
+        <h1 id="oauth2简介"><a href="#oauth2简介" class="headerlink" title="oauth2简介"></a>oauth2简介</h1><p>…</p>
+<h1 id="引入依赖"><a href="#引入依赖" class="headerlink" title="引入依赖"></a>引入依赖</h1><pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.security.oauth&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-security-oauth2&lt;/artifactId&gt;
+&lt;/dependency&gt;
+</code></pre><h1 id="AuthorizationServerConfig"><a href="#AuthorizationServerConfig" class="headerlink" title="AuthorizationServerConfig"></a>AuthorizationServerConfig</h1><pre><code>@Configuration
+@EnableAuthorizationServer
+public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
+    @Autowired
+    private AuthenticationManager authenticationManager;
+    @Autowired
+    private UserDetailsService userDetailsService;
+    ...
+</code></pre><h1 id="WebSecurityConfig"><a href="#WebSecurityConfig" class="headerlink" title="WebSecurityConfig"></a>WebSecurityConfig</h1><p>…</p>
+<h1 id="ResourceServerConfig"><a href="#ResourceServerConfig" class="headerlink" title="ResourceServerConfig"></a>ResourceServerConfig</h1><p>…</p>
 
       </div>
     </article>
     <div class="post-footer">
       <div class="post-footer-nav clearfix">
         
-        <div class="post-footer-link left">
-          <a href="/2018/10/21/spring-boot-security-oauth2/">上一篇：spring boot oauth2 登录验证</a>
-        </div>
         
+          <div class="post-footer-link right" style="text-align:right;">
+            <a href="/2018/09/24/mid-autumn-festival/">下一篇：2018年中秋</a>
+          </div>
         
       </div>
     </div>
